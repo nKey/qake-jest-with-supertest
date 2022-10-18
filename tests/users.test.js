@@ -32,7 +32,7 @@ describe("POST /users", () => {
       .then((response) => {
         const tempo = performance.now() - inicio;
         console.log("A requisição levou " + tempo + "ms");
-        expect(tempo).toGreaterThan(2000);
+        expect(tempo).toBeLessThan(2000);
         const wantedPostUser = {
           name: "TestAPI",
           username: "lolp",
