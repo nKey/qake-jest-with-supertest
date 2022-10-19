@@ -31,7 +31,6 @@ describe("POST /users", () => {
       .expect(201)
       .then((response) => {
         const tempo = performance.now() - inicio;
-        console.log("A requisição levou " + tempo + "ms");
         expect(tempo).toBeLessThan(2000);
         const wantedPostUser = {
           name: "TestAPI",
@@ -111,7 +110,7 @@ describe("GET /users/{id}", () => {
 });
 
 describe("PUT /users/{id}", () => {
-  it("should return 200 and check user was update to 'TestApiPUTJest' and email 'testapijest@mail.com", () => {
+  it("should return 200 and check user was update to 'TestAPI' and email 'testapi@mail.com", () => {
     return request(ApiUrl)
       .put("/users/10")
       .send({

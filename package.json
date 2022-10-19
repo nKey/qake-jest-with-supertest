@@ -4,7 +4,8 @@
   "description": "To easy test API requests",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch --testTimeout 30000"
   },
   "repository": {
     "type": "git",
