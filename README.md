@@ -56,3 +56,5 @@ It's also possible to watch the Jest tests while it's running:
 ```bash
 npm run test:watch
 ```
+
+### Feel free to follow us on [Zeca's Github](https://github.com/zec4o) and [Douglas's Github](https://github.com/douglasqueiroznkey)!
